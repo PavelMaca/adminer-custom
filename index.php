@@ -11,6 +11,12 @@ function adminer_object() {
     
     $plugins = [
         // specify enabled plugins here
+        new AdminerDumpJson(),
+        new AdminerLinksDirect(),
+        new AdminerColors([
+            'localhost' => '#009245',
+            'db.loc' => '#009245',
+        ]),
     ];
 
     /* It is possible to combine customization and plugins:
