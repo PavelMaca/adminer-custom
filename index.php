@@ -18,7 +18,7 @@ function adminer_object() {
         new AdminerDisableJush(),
         new AdminerAutocomplete(),
         new AdminerSaveMenuPos(),
-        new AdminerRemoteColor(),
+        new AdminerRemoteColor('#ED1C24'), // modified
 
 
         // AdminerTheme has to be the last one!
