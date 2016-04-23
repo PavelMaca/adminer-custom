@@ -34,7 +34,12 @@ class AdminerAutocomplete
 <style>.hint { color: #bdc3c7; }</style>
 <script type="text/javascript">
 $(function(){
-	$('.sqlarea').tabcomplete(<?php echo json_encode($suggests) ?>);
+	$('.sqlarea').tabcomplete(<?php echo json_encode($suggests);
+		?>);
+
+	// FIX textarea width
+	$('.sqlarea').css('width', '98%');
+	$('.sqlarea').parent('div').css('display', 'block');
 });
 </script>
 <?php
