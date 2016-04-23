@@ -17,6 +17,9 @@ function adminer_object() {
             'localhost' => '#009245',
             'db.loc' => '#009245',
         ], '#ED1C24'),
+
+        // AdminerTheme has to be the last one!
+        new AdminerTheme('default-orange')
     ];
 
     /* It is possible to combine customization and plugins:
