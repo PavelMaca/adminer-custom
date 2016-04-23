@@ -13,15 +13,12 @@ function adminer_object() {
         // specify enabled plugins here
         new AdminerDumpJson(),
         new AdminerLinksDirect(),
-        new AdminerColors([
-            'localhost' => '#009245',
-            'db.loc' => '#009245',
-        ], '#ED1C24'),
 
         // source: dg/adminer-custom
         new AdminerDisableJush(),
         new AdminerAutocomplete(),
         new AdminerSaveMenuPos(),
+        new AdminerRemoteColor(),
 
 
         // AdminerTheme has to be the last one!
