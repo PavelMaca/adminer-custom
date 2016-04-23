@@ -6,9 +6,12 @@ class AdminerColors
 
 	private $colors;
 
-	public function __construct($colors)
+	private $production;
+
+	public function __construct($colors, $production)
 	{
 		$this->colors = $colors;
+		$this->production = $production;
 	}
 
 	public function head()
@@ -23,7 +26,7 @@ class AdminerColors
 			$color = $this->colors[$_SERVER['SERVER_NAME']];
 
 		} else {
-			return;
+			$color = $this->production;
 		}
 
 		echo '<style>

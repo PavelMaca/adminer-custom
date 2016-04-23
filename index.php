@@ -16,7 +16,7 @@ function adminer_object() {
         new AdminerColors([
             'localhost' => '#009245',
             'db.loc' => '#009245',
-        ]),
+        ], '#ED1C24'),
     ];
 
     /* It is possible to combine customization and plugins:
