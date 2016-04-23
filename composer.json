@@ -1,0 +1,11 @@
+{
+    "name": "PavelMaca/adminer-custom",
+    "description": "Customized Adminer project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Pavel Maca",
+            "email": "maca.pavel@gmail.com"
+        }
+    ]
+}
