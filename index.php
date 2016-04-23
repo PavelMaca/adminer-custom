@@ -18,6 +18,12 @@ function adminer_object() {
             'db.loc' => '#009245',
         ], '#ED1C24'),
 
+        // source: dg/adminer-custom
+        new AdminerDisableJush(),
+        new AdminerAutocomplete(),
+        new AdminerSaveMenuPos(),
+
+
         // AdminerTheme has to be the last one!
         new AdminerTheme('default-orange')
     ];
