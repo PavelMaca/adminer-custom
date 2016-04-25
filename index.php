@@ -24,10 +24,10 @@ if (empty($_GET['file'])) {
 
 function adminer_object() {
     // required to run any plugin
-    include_once dirname(__FILE__) . '/plugins/plugin.php';
+    include_once __DIR__ . '/plugins/plugin.php';
 
     // autoloader
-    foreach (glob(dirname(__FILE__) . '/plugins/*.php') as $filename) {
+    foreach (glob(__DIR__ . '/plugins/*.php') as $filename) {
         include_once $filename;
     }
     
@@ -57,4 +57,4 @@ function adminer_object() {
 }
 
 // include original Adminer or Adminer Editor
-include __DIR__ . "./adminer.php";
+include __DIR__ . '/adminer.php';
