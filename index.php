@@ -35,6 +35,7 @@ function adminer_object() {
         // specify enabled plugins here
         new AdminerDumpJson(),
         new AdminerLinksDirect(),
+        new AdminerTablesFilter(),
 
         // source: dg/adminer-custom
         new AdminerDisableJush(),
